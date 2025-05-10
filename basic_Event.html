@@ -16,11 +16,13 @@
 <body style="background-color: black;color: antiquewhite;">
 
     <h1>Hello i am ajit</h1>
-    <li> <img src="kazama.jpeg" alt="kazama" id="kazama"></li>
-    <li> <img src="nani.jpeg" alt="nani" id="nani"></li>
-    <li> <img src="shinchan.jpeg" alt="shinchan" id="shinchan"></li>
-    <li> <img src="shiro.jpeg" alt="shiro" id="shiro" onclick="alert('hi iam  ajit mathpati')"></li>
-
+    <ul id="ulid">
+        <li> <img src="kazama.jpeg" alt="kazama" id="kazama"></li>
+        <li> <img src="nani.jpeg" alt="nani" id="nani"></li>
+        <li> <img src="shinchan.jpeg" alt="shinchan" id="shinchan"></li>
+        <li> <img src="shiro.jpeg" alt="shiro" id="shiro" onclick="alert('hi iam  ajit mathpati')"></li>
+        <li><a href="https://www.google.co.in/" id="goole">goole</a></li>
+    </ul>
 
 </body>
 <script>
@@ -30,20 +32,55 @@
     // document.getElementById('kazama').addEventListener('dblclick',()=>{
     //     alert('hi i am kazama');
     // })
-    document.getElementById('nani').addEventListener('click', function (e) {
-        console.log(e);
-        console.log('Event Type:', e.type);               // 'click'
-        console.log('Target Element:', e.target);         // <button id="nani">...</button>
-        console.log('Mouse X,Y:', e.clientX, e.clientY);  // जहां
+    // document.getElementById('nani').addEventListener('click', function (e) {
+    //     console.log(e);
+    //     console.log('Event Type:', e.type);               // 'click'
+    //     console.log('Target Element:', e.target);         // <button id="nani">...</button>
+    //     console.log('Mouse X,Y:', e.clientX, e.clientY);  // जहां
+
+    // }, false)
+    // document.getElementById('kazama').addEventListener('mouseover', function (e) {
+
+    //     alert("hi i am kazFama")
+    // }, false)
+    // document.querySelector('#shinchan').addEventListener('dblclick', () => {
+    //     alert("hi i am schinchan");
+    // })
+    // const shiro = document.querySelector('#shiro')
+
+    // shiro.addEventListener('mouseover', (e) => {
+    //     console.log("mouse over");
+    // })
+    // shiro.addEventListener('mouseout', (e) => {
+    //     console.log('mouse out ');
+
+    // })
+    // const nani = document.querySelector('#nani')
+    // nani.addEventListener('click', (e) => {
+
+    // }, false);
+
+    // let search = document.querySelector('#goole')
+    // search.addEventListener('click', (
+    // e) => {
+    //     console.log("WElcome goole")
+    //     e.preventDefault();
+
+    // }, false)
+    // remove image
+    document.querySelector('#ulid').addEventListener('click', (e) => {
+        // console.log(e.target.tagName);
+        // if (e.target.tagName === 'IMG') {
+
+        //     const removeit = e.target.parentNode;
+        //     removeit.remove();
+        // }
+        console.log(e.target);
+
 
     }, false)
-    document.getElementById('kazama').addEventListener('mouseover', function (e) {
 
-        alert("hi i am kazFama")
-    }, false)
-    document.querySelector('#shinchan').addEventListener('dblclick', () => {
-        alert("hi i am schinchan");
-    })
+
 </script>
 
 </html>
