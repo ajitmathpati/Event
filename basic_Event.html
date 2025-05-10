@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;color: antiquewhite;">
+
+    <h1>Hello i am ajit</h1>
+    <li> <img src="kazama.jpeg" alt="kazama" id="kazama"></li>
+    <li> <img src="nani.jpeg" alt="nani" id="nani"></li>
+    <li> <img src="shinchan.jpeg" alt="shinchan" id="shinchan"></li>
+    <li> <img src="shiro.jpeg" alt="shiro" id="shiro" onclick="alert('hi iam  ajit mathpati')"></li>
+
+
+</body>
+<script>
+    // document.querySelector('#shinchan').onclick = () => {
+    //     alert('Hello I AM shincha ');//this is wrong method you ccan use addEventlistenar
+    // }
+    // document.getElementById('kazama').addEventListener('dblclick',()=>{
+    //     alert('hi i am kazama');
+    // })
+    document.getElementById('nani').addEventListener('click', function (e) {
+        console.log(e);
+        console.log('Event Type:', e.type);               // 'click'
+        console.log('Target Element:', e.target);         // <button id="nani">...</button>
+        console.log('Mouse X,Y:', e.clientX, e.clientY);  // जहां
+
+    }, false)
+    document.getElementById('kazama').addEventListener('mouseover', function (e) {
+
+        alert("hi i am kazFama")
+    }, false)
+    document.querySelector('#shinchan').addEventListener('dblclick', () => {
+        alert("hi i am schinchan");
+    })
+</script>
+
+</html>
